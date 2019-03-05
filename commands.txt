@@ -1,0 +1,17 @@
+adonis new backend --api-only // não cria as views
+adonis install mysql
+adonis migration:run
+adonis make:model Post -m -c // cria a model Post -m faz a migration e -c cria o controller com o crud
+adonis route:list
+cd..
+create-react-app frontend
+    // se necessário, rodar: npm install -g create-react-app
+cd frontend
+code .
+npm start
+cd..
+cd backend
+adonis serve --dev
+cd..
+cd frontend
+npm install axios // client para acessar requisições http
